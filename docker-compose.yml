@@ -1,0 +1,25 @@
+version: '3.4'
+
+services: 
+    api:
+        build: .
+        volumes: 
+            - .:/triyo-test
+        ports: 
+            - 8080:80
+        working_dir: "/triyo-test"
+        command: bash -c "npm install && npm rebuild && npm run migrations && npm start"
+        links: 
+            - db
+            - redis
+    mongodb:
+        image: mongo
+        container_name: mongodb
+        environment: 
+            - PUID=1000
+            - PGID=1000
+        volumes:
+            - /home/projects/entrevistas/TRIYO/triyo back/infrastructure/config/mongodb/database:/data/db
+        ports: 
+            - 27017:27017
+        restart: unless-stopped
