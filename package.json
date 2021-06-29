@@ -1,0 +1,25 @@
+{
+  "name": "triyo-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielalegrete/teste-triiyo-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielalegrete/teste-triiyo-backend/issues"
+  },
+  "homepage": "https://github.com/gabrielalegrete/teste-triiyo-backend#readme"
+}
