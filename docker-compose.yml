@@ -5,14 +5,12 @@ services:
     container_name: api
     build: .
     volumes: 
-        - .:/usr/src/app
+        - .:/usr/src
     ports: 
         - 8080:8080
-    # working_dir: "/usr/src/app/"
-    command: "npm install && npm start"
+    command: npm start
     links: 
         - db
-    # tty: true
   db:
     image: mongo
     container_name: db
@@ -20,5 +18,3 @@ services:
         - /database:/data/db
     ports: 
         - 27017:27017
-    # restart: unless-stopped
-    # tty: true

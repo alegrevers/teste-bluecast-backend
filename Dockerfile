@@ -1,13 +1,9 @@
 FROM node:alpine
 
-WORKDIR /usr/src/app/
+WORKDIR /usr/src
 
-COPY package.json .
+COPY package*.json /usr/src/
 
 RUN npm install
 
-COPY . .
-
-# EXPOSE 8080
-
-# CMD ["npm", "start"]
+COPY . /usr/src/
