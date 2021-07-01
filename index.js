@@ -1,26 +1,25 @@
+require('dotenv').config()
 const express = require('express')
-const MongoClient = require('mongodb').MongoClient
+global.db = require('./src/infrastructure/config/database')
 
 const PORT = 8080;
 const HOST = '0.0.0.0';
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello World oiakudjfaj');
+app.get('/', async (req, res) => {
+    res.send('Home');
 })
 
-MongoClient.connect(
-  'mongodb+srv://dev:dev@cluster0.l29up.mongodb.net/triyo-test?retryWrites=true&w=majority',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(result => {
-    console.log('MongoDB Connected!!!')
-  })
-  .catch(error => {
-    console.log('MongoDB Fail!!!')
-  })
+app.get('/clients', async (req, res, next) => {
+  try {
+    const docs = await global.db.findAll()
+    res.json({title: 'Lista de Clientes', docs });
+  } catch (err) {
+    next(err)
+  }
+})
+
+
 
 app.listen(PORT, HOST)

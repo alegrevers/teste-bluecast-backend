@@ -1,0 +1,32 @@
+[
+  {
+    "id": "00001",
+    "name": "Empresa A",
+    "dueDate": "21-03-2021",
+    "paymentDate": ""
+  },
+  {
+    "id": "00002",
+    "name": "Empresa B",
+    "dueDate": "21-07-2021",
+    "paymentDate": ""
+  },
+  {
+    "id": "00003",
+    "name": "Empresa C",
+    "dueDate": "21-04-2021",
+    "paymentDate": "26-04-2021"
+  },
+  {
+    "id": "00004",
+    "name": "Empresa D",
+    "dueDate": "21-05-2021",
+    "paymentDate": ""
+  },
+  {
+    "id": "00005",
+    "name": "Empresa E",
+    "dueDate": "21-06-2021",
+    "paymentDate": "28-06-2021"
+  }
+]

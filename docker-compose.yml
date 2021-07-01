@@ -5,9 +5,9 @@ services:
     container_name: api
     build: .
     volumes: 
-        - .:/usr/src
+        - .:/usr/src/app
     ports: 
-        - 8080:8080
+        - "8080:8080"
     command: npm start
     links: 
         - db
