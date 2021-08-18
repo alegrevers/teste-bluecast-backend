@@ -1,5 +1,5 @@
 {
-  "name": "triyo-back",
+  "name": "bluecast-back",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabrielalegrete/teste-triiyo-backend.git"
+    "url": "git+https://github.com/gabrielalegrete/teste-bluecast-backend.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gabrielalegrete/teste-triiyo-backend/issues"
+    "url": "https://github.com/gabrielalegrete/teste-bluecast-backend/issues"
   },
-  "homepage": "https://github.com/gabrielalegrete/teste-triiyo-backend#readme"
+  "homepage": "https://github.com/gabrielalegrete/teste-bluecast-backend#readme"
 }
